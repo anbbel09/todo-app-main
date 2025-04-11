@@ -1,0 +1,24 @@
+# node modules
+node_modules/
+
+# output CSS generado por herramientas como Tailwind
+src/output.css
+
+# archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# entorno de desarrollo (VSCode, etc.)
+.vscode/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# archivos del sistema y otros
+*.log
+*.tmp
+
+# opcional: ignorar dist si llegas a compilar
+dist/
