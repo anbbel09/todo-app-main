@@ -15,7 +15,7 @@ listInput.addEventListener("click", (e) => {
               <div data-id="${dataId}" class="bg-gray-800 rounded-t-full w-full flex items-center py-4 px-3 gap-3 border-b border-gray-600">
                 <input class="w-7 h-6 rounded-full appearance-none outline border-white border-1 checked:bg-[url(/images/icon-check.svg)] checked:m-auto cursor-pointer checked:bg-no-repeat checked:bg-[4px]" type="checkbox" name="check" id="check">
                 <label class="w-full text-white text-xs cursor-pointer align-middle" for="check">${textarea.value}</label>
-                <img class="w-4 h-4 cursor-pointer" src="images/icon-cross.svg" alt="cross">
+                <img class="w-4 h-4 cursor-pointer" src="./images/icon-cross.svg" alt="cross">
               </div>`;
 
       return taskHTML;
