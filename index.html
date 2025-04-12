@@ -11,7 +11,41 @@
 
 </head>
 <body>
+<main class="w-full h-screen bg-slate-900 relative">
+  <header class=" w-auto h-56 bg-[url(/images/bg-mobile-dark.jpg)] bg-no-repeat bg-cover">
+    <div class=" w-auto items-center flex justify-between mx-auto p-7">
+      <h1 class="text-3xl font-semibold tracking-widest text-white">TODO</h1>
+      <img class="w-5 h-5" src="images/icon-sun.svg" alt="">
+    </div>
+  </header>
+  <form class="w-5/6 absolute top-1/6 left-0 right-0 bottom-0 mx-auto flex flex-col items-center gap-5 ">
+    <fieldset id="listInput" class="bg-gray-800 rounded-lg w-full h-auto flex justify-start items-center py-4 px-3 gap-3">
+      <input class="w-6 h-5 rounded-full appearance-none outline border-white border-1 checked:bg-[url(/images/icon-check.svg)]  checked:m-auto cursor-pointer checked:bg-no-repeat checked:bg-[4px] " type="checkbox" name="" id="">
+      <textarea class="w-full h-5 text-white text-xs cursor-pointer align-middle" name="" id="" placeholder="Type..."></textarea>
+    </fieldset>
+    <fieldset id="listContainer" class="bg-gray-800 rounded-lg w-full flex flex-col h-auto">
+      <!-- <div class="bg-gray-800 rounded-t-full w-full flex  items-center py-4 px-3 gap-3 border-b border-gray-600">
+        <input class="w-7 h-6 rounded-full appearance-none outline border-white border-1 checked:bg-[url(/images/icon-check.svg)] checked:m-auto cursor-pointer checked:bg-no-repeat checked:bg-[4px]" type="checkbox" name="check" id="check">
+        <label class="w-full text-white text-xs cursor-pointer align-middle" for="check">Texto</label>
+        <img class="w-4 h-4" src="images/icon-cross.svg" alt="">
+      </div> -->
+      <div class="w-full flex mt-auto justify-between text-xs text-gray-400 p-2">
+        <p><span id="quantity">0</span> items left</p>
+        <p>Clear completed</p>
+      </div>
+    </fieldset>
+    <fieldset class="bg-gray-800 rounded-lg w-full h-auto flex  py-4 px-3 gap-3">
+      <ul class="flex gap-2 w-full justify-evenly text-gray-600 text-xs">
+        <li class=""> <a class="active:text-blue-800" href="">All</a></li>
+        <li class=""> <a class="active:text-blue-800" href="">Active</a></li>
+        <li class=""> <a class="active:text-blue-800" href="">Completes</a></li>
+      </ul>
+    </fieldset>
+  </form>
 
+  
+</main>
  
+<script src="/index.js"></script>
 </body>
 </html>
