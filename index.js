@@ -1,6 +1,9 @@
 let listContainer = document.querySelector("#listContainer");
 let listInput = document.getElementById("listInput");
 let quantityTask = document.getElementById("quantity");
+const clear = document.getElementById('clear');
+console.log(clear);
+
 
 let ArrTask;
 // 1. Insertar la tarea en el DOM
@@ -48,8 +51,20 @@ listContainer.addEventListener('click', (e) => {
         }        
        
     }
+
+    if(element === clear){
+        
+        listContainer.querySelectorAll(`[data-id]`).forEach( child => {
+            listContainer.removeChild(child);
+            updateTaskList()
+        })
+
+        
+    }
     
 });
+
+
 
 function updateTaskList() {
     ArrTask = [...listContainer.querySelectorAll('div[data-id]')];
